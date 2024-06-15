@@ -1,2 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Karla", sans-serif;
+}
+/* SVG                    */
+.blobBL {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10vw;
+}
+.blobTR {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15vw;
+}
+.app-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #293264;
+  background-color: #f5f7fb;
+  min-height: 100vh;
+  padding-top: 1em;
+}
+.app-title {
+  filter: drop-shadow(0px 4px 4px rgba(41, 50, 100, 0.25));
+  font-weight: 700;
+}
+.app-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0.5em 0 1.5em 0;
+  text-align: center;
+}
+.btn-container {
+  width: min(80%, 45rem);
+  margin-block: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Button */
+.btn {
+  border: none;
+  background-color: #4d5b9e;
+  padding: 1em 4em;
+  color: #f5f7fb;
+  border-radius: 100vmax;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+.btn:focus-visible,
+.btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 2px rgba(77, 91, 158, 0.5);
+}
+.btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
