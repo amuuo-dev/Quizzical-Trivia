@@ -3,6 +3,7 @@ import Introduction from "../components/Introduction";
 import Question from "../components/Question";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
+import Footer from "../components/Footer";
 
 const App = () => {
   const [welcome, setWelcome] = useState(true);
@@ -239,6 +240,7 @@ const App = () => {
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 };
