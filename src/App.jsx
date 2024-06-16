@@ -26,7 +26,7 @@ const App = () => {
   // Fetch APIs from OPENTDB
   useEffect(() => {
     const apiUrl =
-      "https://opentdb.com/api.php?amount=4&category=26&difficulty=easy&type=multiple";
+      "https://opentdb.com/api.php?amount=4&category=9&difficulty=easy&type=multiple";
     fetch(apiUrl)
       .then((res) => res.json())
       .then((data) => {
@@ -181,7 +181,7 @@ const App = () => {
         ) : (
           <div className="app-container">
             {/* Render confetti only if user scores 4/4 */}
-            {score === 4 && <Confetti />}
+            {score === 8 && <Confetti />}
             <svg
               className="blobBL"
               viewBox="0 0 148 118"
@@ -202,7 +202,7 @@ const App = () => {
               {checked ? (
                 <div>
                   <span className="score">
-                    You scored <span className="score-number">{score}</span>/4
+                    You scored <span className="score-number">{score}</span>/8
                     correct answers
                   </span>
                   <button onClick={newGame} className="btn btn-main">

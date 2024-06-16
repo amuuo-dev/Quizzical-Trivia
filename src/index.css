@@ -87,3 +87,34 @@ h4 {
 .question-title {
   text-align: left;
 }
+.container-answers {
+  display: flex;
+  column-gap: 1em;
+  margin: 0.5em 0 1em 0;
+}
+/* ANSWER */
+.answer {
+  border-radius: 100vmax;
+  border: 1px solid #4d5b9e;
+  padding: 0.5em 1em;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.score {
+  margin-inline: 1em;
+}
+.score-number {
+  color: green;
+}
+@media screen and (max-width: 768px) {
+  .container-answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5em;
+  }
+}
