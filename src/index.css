@@ -78,3 +78,12 @@ h4 {
 .btn:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
+/* Question */
+.question {
+  width: min(80%, 45rem);
+  margin-block: 0.5em;
+  border-bottom: 1px solid #d6dbf5;
+}
+.question-title {
+  text-align: left;
+}

@@ -40,7 +40,7 @@ const App = () => {
         {welcome ? (
           <Introduction handleClick={handleClick} />
         ) : (
-          <div>{questionElements}</div>
+          <div className="app-container">{questionElements}</div>
         )}
       </main>
     </div>
